@@ -8,4 +8,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: $color-text;
+  background-color: $color-white;
+}
+
+.section {
+  &__title {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: $color-text;
+    margin-bottom: 40px;
+  }
 }

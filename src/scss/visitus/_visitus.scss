@@ -1,0 +1,41 @@
+@use "../variables/colors" as *;
+
+.visit {
+  padding: 80px 16px;
+  text-align: center;
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  &__map {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: #eee; // 仮のマップ枠用
+    border-radius: 12px;
+  }
+
+  &__details {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    font-size: 14px;
+    color: $color-text;
+    line-height: 1.6;
+
+    p {
+      margin: 8px 0;
+
+      strong {
+        display: inline-block;
+        width: 80px; // ラベル幅を揃える
+      }
+    }
+  }
+}
