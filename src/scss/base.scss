@@ -1,3 +1,11 @@
 @use "./bender/bootstrap-reboot.css";
-@forward "./variables/font";
-@forward "./variables/colors.scss";
+@use "./variables/colors" as *;
+@use "./variables/fonts" as *;
+
+body {
+  @include font-base;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-text;
+}

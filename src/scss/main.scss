@@ -1,9 +1,4 @@
-@use "./base";
-@use "./hero/hero";
-
-body {
-  @include base.font-base;
-  line-height: 1.2;
-  font-weight: 400;
-  font-size: 16px;
-}
+@use "variables/colors";
+@use "base";
+@use "hero/hero";
+@use "nav/nav";
