@@ -1,8 +1,0 @@
-@use "./base";
-@use "./font";
-
-body {
-  @include font.font-base;
-  line-height: 1.2;
-  font-weight: 400;
-}

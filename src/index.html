@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gelato Luno</title>
+  </head>
+  <body>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 class="hero__logo">
+          <img
+            src="./assets/logo.png"
+            alt="Gelato Luno"
+            width="242"
+            height="32"
+          />
+        </h1>
+        <p class="hero__text">月のようにやさしい、まるくてひんやりな幸せ</p>
+        <div class="hero__scroll hero-scroll">
+          <span class="hero-scroll__text">Scroll down</span>
+        </div>
+      </section>
+      <!-- Menu Section -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#flavors">フレーバー</a></li>
+          <li><a href="#commitment">こだわり</a></li>
+          <li><a href="#visit">店舗情報</a></li>
+        </ul>
+      </nav>
+      <!-- Flavors Section -->
+      <section id="flavors" class="section flavors">
+        <h2 class="section__title">Flavors</h2>
+        <p class="section__subtitle">
+          季節ごとに楽しめる、こだわりのジェラートをご紹介します。
+        </p>
+        <div class="flavors__grid">
+          <!-- Sample flavor -->
+          <div class="flavor">
+            <div class="flavor__image skeleton-img"></div>
+            <h3 class="flavor__name">ブラニームーン</h3>
+            <p class="flavor__desc">
+              ほろ苦いチョコに、しっとり焼き上げたブラウニーを混ぜ込んだ、大人のための贅沢ジェラート。
+            </p>
+          </div>
+          <!-- 他のフレーバーも同様に追加 -->
+        </div>
+      </section>
+
+      <!-- Commitment Section -->
+      <section id="commitment" class="section commitment">
+        <h2 class="section__title">Commitment</h2>
+        <p class="section__subtitle">
+          Gelato Lunoが大切にしている、3つのこだわり。
+        </p>
+        <div class="commitment__list">
+          <div class="commitment__item">
+            <h3><span>1</span> 毎日食べたくなるやさしさ</h3>
+            <p>
+              はた目にも口にもふんわりやさしく。毎日でも食べたくなる、軽やかな美味しさを目指しています。
+            </p>
+          </div>
+          <div class="commitment__item">
+            <h3><span>2</span> 素材そのままの風味を大切に</h3>
+            <p>
+              北海道の生乳、旬のフルーツ、風味豊かなナッツなど、素材本来の美味しさを活かしています。
+            </p>
+          </div>
+          <div class="commitment__item">
+            <h3><span>3</span> 季節限定フレーバーもご用意</h3>
+            <p>
+              その季節ならではの素材を使った、特別なジェラートも登場します。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visit Section -->
+      <section id="visit" class="section visit">
+        <h2 class="section__title">Visit us</h2>
+        <p class="section__subtitle">
+          営業時間やアクセスなど、Gelato Lunoのお店についてはこちら。
+        </p>
+        <div class="visit__info">
+          <div class="visit__map skeleton-img"></div>
+          <div class="visit__details">
+            <p><strong>営業時間</strong><br />10:00〜19:00</p>
+            <p><strong>住所</strong><br />東京都渋谷区神宮前4丁目3-15</p>
+            <p>
+              <strong>アクセス</strong
+              ><br />東京メトロ表参道駅（徒歩約2分）<br />JR原宿駅（徒歩約10分）
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>

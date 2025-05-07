@@ -1,0 +1,6 @@
+.hero-scroll {
+  position: relative;
+  &::before {
+    content: "";
+  }
+}
