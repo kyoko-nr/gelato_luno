@@ -1,6 +1,7 @@
 @use "./bender/reset.css";
 @use "./variables/colors" as *;
 @use "./variables/fonts" as *;
+@use "./variables/fonts" as *;
 
 body {
   @include font-base;
@@ -11,15 +12,41 @@ body {
   background-color: $color-white;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .section {
+  padding: 120px 160px;
   &__title {
-    font-size: 28px;
-    margin-bottom: 8px;
+    margin-top: -2px;
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 12px;
+    @include font-accent;
+
+    &::before {
+      background-image: url("/assets/common/title_line.svg");
+      content: "";
+      width: 180px;
+      height: 31px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__subtitle {
-    font-size: 16px;
-    color: $color-text;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
+  }
+
+  &__description {
+    margin-bottom: 54px;
   }
 }
