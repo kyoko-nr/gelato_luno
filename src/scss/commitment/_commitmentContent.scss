@@ -1,0 +1,63 @@
+@use "../variables/colors" as *;
+@use "../variables/fonts" as *;
+
+.commitment-content {
+  padding: 52px 58px 58px;
+  display: grid;
+  grid-template-columns: 158px 1fr;
+  align-items: center;
+
+  &__number {
+    width: 180px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("/assets/commitment/line_upper.svg");
+      top: 8px;
+      right: 26px;
+      width: 36px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      rotate: 30deg;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("/assets/commitment/line_lower.svg");
+      bottom: -22px;
+      left: 4px;
+      width: 51px;
+      height: 29px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__number-text {
+    @include font-accent;
+    color: $color-accent;
+    font-size: 128px;
+    line-height: 1;
+    display: inline-block;
+    width: 100%;
+    padding-left: 28px;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: $color-accent;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__description {
+    line-height: 2;
+    text-align: center;
+  }
+}
