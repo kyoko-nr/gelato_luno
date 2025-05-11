@@ -20,9 +20,14 @@ img {
 
 .section {
   padding: 120px 160px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  &__inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__title {
     margin-top: -2px;
@@ -51,6 +56,6 @@ img {
   }
 
   &__description {
-    margin-bottom: 54px;
+    margin-bottom: 64px;
   }
 }

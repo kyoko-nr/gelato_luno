@@ -16,6 +16,7 @@
             alt="Gelato Luno"
             width="242"
             height="32"
+            loading="eager"
           />
         </h1>
         <p class="hero__text">月のようにやさしい、まるくてひんやりな幸せ</p>
@@ -54,149 +55,159 @@
       </nav>
       <!-- Flavors Section -->
       <section id="flavors" class="section flavors">
-        <h2 class="section__title">Flavors</h2>
-        <p class="section__subtitle">フレーバー</p>
-        <p class="section__description">
-          季節ごとに楽しめる、こだわりのジェラートをご紹介します。
-        </p>
-        <div class="flavors__grid">
-          <div class="flavor">
-            <div class="flavor__image">
-              <img
-                src="./assets/flavors/brownie.png"
-                alt=""
-                width="296"
-                height="296"
-                loading="lazy"
-              />
+        <div class="section__inner">
+          <h2 class="section__title">Flavors</h2>
+          <p class="section__subtitle">フレーバー</p>
+          <p class="section__description">
+            季節ごとに楽しめる、こだわりのジェラートをご紹介します。
+          </p>
+          <div class="flavors__grid">
+            <div class="flavor">
+              <div class="flavor__image">
+                <img
+                  src="./assets/flavors/brownie.png"
+                  alt=""
+                  width="296"
+                  height="296"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="flavor__name">ブラニームーン</h3>
+              <p class="flavor__desc">
+                ほろ苦いチョコに、しっとり焼き上げたブラウニーを混ぜ込んだ、大人のための月夜ジェラート。
+              </p>
             </div>
-            <h3 class="flavor__name">ブラニームーン</h3>
-            <p class="flavor__desc">
-              ほろ苦いチョコに、しっとり焼き上げたブラウニーを混ぜ込んだ、大人のための月夜ジェラート。
-            </p>
-          </div>
-          <div class="flavor">
-            <div class="flavor__image">
-              <img
-                src="./assets/flavors/strawberry.png"
-                alt=""
-                width="296"
-                height="296"
-                loading="lazy"
-              />
+            <div class="flavor">
+              <div class="flavor__image">
+                <img
+                  src="./assets/flavors/strawberry.png"
+                  alt=""
+                  width="296"
+                  height="296"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="flavor__name">ストロベリーソレイユ</h3>
+              <p class="flavor__desc">
+                太陽の下で育った完熟いちごを使った、ジューシーで甘酸っぱい初恋ジェラート。
+              </p>
             </div>
-            <h3 class="flavor__name">ストロベリーソレイユ</h3>
-            <p class="flavor__desc">
-              太陽の下で育った完熟いちごを使った、ジューシーで甘酸っぱい初恋ジェラート。
-            </p>
-          </div>
-          <div class="flavor">
-            <div class="flavor__image">
-              <img
-                src="./assets/flavors/caramel.png"
-                alt=""
-                width="296"
-                height="296"
-                loading="lazy"
-              />
+            <div class="flavor">
+              <div class="flavor__image">
+                <img
+                  src="./assets/flavors/caramel.png"
+                  alt=""
+                  width="296"
+                  height="296"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="flavor__name">キャラメルナッティ</h3>
+              <p class="flavor__desc">
+                カリッと香ばしいアーモンドとくるみに、とろけるキャラメルをひとさじ。クセになる深い味わい。
+              </p>
             </div>
-            <h3 class="flavor__name">キャラメルナッティ</h3>
-            <p class="flavor__desc">
-              カリッと香ばしいアーモンドとくるみに、とろけるキャラメルをひとさじ。クセになる深い味わい。
-            </p>
-          </div>
-          <div class="flavor">
-            <div class="flavor__image">
-              <img
-                src="./assets/flavors/pistachio.png"
-                alt=""
-                width="296"
-                height="296"
-                loading="lazy"
-              />
+            <div class="flavor">
+              <div class="flavor__image">
+                <img
+                  src="./assets/flavors/pistachio.png"
+                  alt=""
+                  width="296"
+                  height="296"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="flavor__name">ピスタチオリリコ</h3>
+              <p class="flavor__desc">
+                イタリア産ピスタチオの豊かなコクと香りを、ふんわりまろやかに。ナッツの優しさをそのままに。
+              </p>
             </div>
-            <h3 class="flavor__name">ピスタチオリリコ</h3>
-            <p class="flavor__desc">
-              イタリア産ピスタチオの豊かなコクと香りを、ふんわりまろやかに。ナッツの優しさをそのままに。
-            </p>
-          </div>
-          <div class="flavor">
-            <div class="flavor__image">
-              <img
-                src="./assets/flavors/lemon.png"
-                alt=""
-                width="296"
-                height="296"
-                loading="lazy"
-              />
+            <div class="flavor">
+              <div class="flavor__image">
+                <img
+                  src="./assets/flavors/lemon.png"
+                  alt=""
+                  width="296"
+                  height="296"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="flavor__name">レモンセレーノ</h3>
+              <p class="flavor__desc">
+                フレッシュな瀬戸内レモンを使った、爽やかでキリッとした酸味。夏の午後にぴったりの一品。
+              </p>
             </div>
-            <h3 class="flavor__name">レモンセレーノ</h3>
-            <p class="flavor__desc">
-              フレッシュな瀬戸内レモンを使った、爽やかでキリッとした酸味。夏の午後にぴったりの一品。
-            </p>
-          </div>
-          <div class="flavor">
-            <div class="flavor__image">
-              <img
-                src="./assets/flavors/sweetpotato.png"
-                alt=""
-                width="296"
-                height="296"
-                loading="lazy"
-              />
+            <div class="flavor">
+              <div class="flavor__image">
+                <img
+                  src="./assets/flavors/sweetpotato.png"
+                  alt=""
+                  width="296"
+                  height="296"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="flavor__name">むらさきいもルーナ</h3>
+              <p class="flavor__desc">
+                まるで月あかりのようにやさしい甘さ。やさしく炊き上げた紫いもが、ふわっと香ります。
+              </p>
             </div>
-            <h3 class="flavor__name">むらさきいもルーナ</h3>
-            <p class="flavor__desc">
-              まるで月あかりのようにやさしい甘さ。やさしく炊き上げた紫いもが、ふわっと香ります。
-            </p>
           </div>
         </div>
       </section>
 
       <!-- Commitment Section -->
       <section id="commitment" class="section commitment">
-        <h2 class="section__title">Commitment</h2>
-        <p class="section__subtitle">こだわり</p>
-        <p class="section__description">
-          Gelato Lunoが大切にしている、3つのこだわり。
-        </p>
-        <div class="commitment__list">
-          <div class="commitment__item commitment-content">
-            <div class="commitment-content__number">
-              <span class="commitment-content__number-text">1</span>
+        <div class="section__inner">
+          <h2 class="section__title">Commitment</h2>
+          <p class="section__subtitle">こだわり</p>
+          <p class="section__description">
+            Gelato Lunoが大切にしている、3つのこだわり。
+          </p>
+          <div class="commitment__list">
+            <div class="commitment__item commitment-content">
+              <div class="commitment-content__number">
+                <span class="commitment-content__number-text">1</span>
+              </div>
+              <div class="commitment-content__inner">
+                <h3 class="commitment-content__title">
+                  毎日食べたくなるやさしさ
+                </h3>
+                <p class="commitment-content__description">
+                  Gelato Lunoのジェラートは、甘さも口どけもふんわりやさしく。<br />
+                  毎日でも食べたくなる、軽やかなおいしさを目指しています。
+                </p>
+              </div>
             </div>
-            <div class="commitment-content__inner">
-              <h3 class="commitment-content__title">毎日食べたくなるやさしさ</h3>
-              <p class="commitment-content__description">
-                Gelato Lunoのジェラートは、甘さも口どけもふんわりやさしく。<br />
-  毎日でも食べたくなる、軽やかなおいしさを目指しています。
-              </p>
-            </div>
-          </div>
 
-          <div class="commitment__item commitment-content">
-            <div class="commitment-content__number">
-              <span class="commitment-content__number-text">2</span>
+            <div class="commitment__item commitment-content">
+              <div class="commitment-content__number">
+                <span class="commitment-content__number-text">2</span>
+              </div>
+              <div class="commitment-content__inner">
+                <h3 class="commitment-content__title">
+                  素材そのままの風味を大切に
+                </h3>
+                <p class="commitment-content__description">
+                  北海道産の生乳、旬のフルーツ、風味豊かなナッツ。<br />
+                  ひとつひとつ丁寧に選び、素材本来の味を活かしてつくっています。
+                </p>
+              </div>
             </div>
-            <div class="commitment-content__inner">
-              <h3 class="commitment-content__title">素材そのままの風味を大切に</h3>
-              <p class="commitment-content__description">
-                北海道産の生乳、旬のフルーツ、風味豊かなナッツ。<br />
-ひとつひとつ丁寧に選び、素材本来の味を活かしてつくっています。
-              </p>
-            </div>
-          </div>
 
-          <div class="commitment__item commitment-content">
-            <div class="commitment-content__number">
-              <span class="commitment-content__number-text">3</span>
-            </div>
-            <div class="commitment-content__inner">
-              <h3 class="commitment-content__title">季節限定フレーバーもご用意</h3>
-              <p class="commitment-content__description">
-                その季節ならではの素材を使った、特別なジェラートも登場します。<br />
-来るたびに新しいおいしさに出会える楽しみを。
-              </p>
+            <div class="commitment__item commitment-content">
+              <div class="commitment-content__number">
+                <span class="commitment-content__number-text">3</span>
+              </div>
+              <div class="commitment-content__inner">
+                <h3 class="commitment-content__title">
+                  季節限定フレーバーもご用意
+                </h3>
+                <p class="commitment-content__description">
+                  その季節ならではの素材を使った、特別なジェラートも登場します。<br />
+                  来るたびに新しいおいしさに出会える楽しみを。
+                </p>
+              </div>
             </div>
           </div>
         </div>
