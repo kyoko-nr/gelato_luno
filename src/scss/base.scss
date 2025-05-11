@@ -20,6 +20,7 @@ img {
 
 .section {
   padding: 120px 160px;
+  overflow: hidden;
 
   &__inner {
     max-width: 960px;

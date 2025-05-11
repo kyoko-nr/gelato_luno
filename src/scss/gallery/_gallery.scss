@@ -1,0 +1,47 @@
+@use "../variables/colors" as *;
+
+.gallery {
+  &__item {
+    width: 540px;
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    display: grid;
+    gap: 24px;
+    position: relative;
+  }
+
+  &__carousel {
+    width: 100%;
+    position: relative;
+  }
+
+  &__description {
+    text-align: center;
+  }
+}
+
+// Swiper pagination styles
+.swiper-pagination {
+  position: relative !important;
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: $color-accent;
+    opacity: 0.5;
+    margin: 0 6px !important;
+    transition: transform 0.2s ease;
+
+    &-active {
+      opacity: 1;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
