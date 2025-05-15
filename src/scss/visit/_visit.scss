@@ -1,13 +1,12 @@
 @use "../variables/colors" as *;
 
 .visit {
-  padding: 80px 16px;
+  padding: 120px 0;
   text-align: center;
 
   &__info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 1fr;
     gap: 24px;
     max-width: 960px;
     margin: 0 auto;
@@ -15,9 +14,7 @@
 
   &__map {
     width: 100%;
-    max-width: 500px;
-    height: 300px;
-    background-color: #eee; // 仮のマップ枠用
+    background-color: #eee;
     border-radius: 12px;
   }
 
