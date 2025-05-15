@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
+    gap: 24px;
     max-width: 960px;
     margin: 0 auto;
   }
@@ -24,18 +24,6 @@
   &__details {
     width: 100%;
     max-width: 400px;
-    text-align: left;
-    font-size: 14px;
-    color: $color-text;
-    line-height: 1.6;
-
-    p {
-      margin: 8px 0;
-
-      strong {
-        display: inline-block;
-        width: 80px; // ラベル幅を揃える
-      }
-    }
+    padding: 24px;
   }
 }
